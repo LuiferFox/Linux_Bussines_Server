@@ -1,0 +1,27 @@
+# Crear usuarios
+
+sudo adduser administrador
+
+sudo adduser soporte
+
+# Crear grupo
+
+sudo groupadd ti
+
+# Agregar usuarios al grupo
+
+sudo usermod -aG ti administrador
+
+sudo usermod -aG ti soporte
+
+# Verificar grupos
+
+groups administrador
+
+groups soporte
+
+# Verificar usuarios
+
+grep administrador /etc/passwd
+
+grep soporte /etc/passwd
