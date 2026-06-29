@@ -1,0 +1,27 @@
+# Instalar Apache
+
+sudo apt install apache2 -y
+
+# Verificar servicio
+
+systemctl status apache2
+
+# Verificar puerto HTTP
+
+sudo ss -tulnp | grep :80
+
+# Probar respuesta HTTP
+
+curl -I http://localhost
+
+# Directorio web
+
+cd /var/www/html
+
+# Respaldo de la página por defecto
+
+sudo cp index.html index.html.bak
+
+# Editar página principal
+
+sudo nano index.html
